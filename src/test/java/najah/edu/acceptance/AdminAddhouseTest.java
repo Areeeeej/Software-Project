@@ -19,6 +19,7 @@ public class AdminAddhouseTest {
 	        while (!exit) {
 	            System.out.println("\nAdmin Dashboard");
 	            System.out.println("3. Add housing units");
+	            System.out.println("4. print Result : ");
 	            System.out.println("0. Logout");
 
 	            System.out.print("Enter your choice: ");
@@ -34,6 +35,10 @@ public class AdminAddhouseTest {
 	                        case 3:
 	                            System.out.println("Add housing units");
 	                            admin.addNewHousing();
+	                            break;
+	                        case 4:
+	                        	System.out.println("-------------------------------------");
+	                            admin.viewHousingDetailsByOwnerName("Alaa");
 	                            break;
 	                        case 0:
 	                            exit = true;

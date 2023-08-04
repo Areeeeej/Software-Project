@@ -11,6 +11,7 @@ public class owneraddhouseTest {
 	
 	AdminClass admin=new AdminClass();
 	OwnerClass o1=new OwnerClass();
+	Units un=new Units();
 	Main n=new Main();
 	@Given("I am an owner")
 	public void iAmAnOwner() {
@@ -22,7 +23,7 @@ public class owneraddhouseTest {
 	@When("I add a new housing unit")
 	public void iAddANewHousingUnit() {
 	    
-		
+		n.unitlist();
 		 Scanner scanner = new Scanner(System.in);
 	        boolean exit = false;
 
@@ -30,7 +31,7 @@ public class owneraddhouseTest {
 	            System.out.println("\nOwner Dashboard");
 	           
 	            System.out.println("4. Add apartment details");
-	           
+	            System.out.println("5. print :");
 	            System.out.println("0. Logout");
 
 	            System.out.print("Enter your choice: ");
@@ -46,7 +47,11 @@ public class owneraddhouseTest {
 	                   
 	                    // Implement add apartment details functionality here
 	                    break;
-	                
+	                case 5:
+	                	admin.viewmanagmenthouse();
+	                	//un.viewunit();
+	                	
+	                	break;
 	                case 0:
 	                    exit = true;
 	                    System.out.println("Logged out successfully");

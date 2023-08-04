@@ -28,6 +28,7 @@ Main n=new Main();
         while (!exit) {
             System.out.println("\nAdmin Dashboard");
             System.out.println("1. Accept/reject housing advertisements");
+            System.out.println("2. print Result :");
             System.out.println("0. Logout");
 
             System.out.print("Enter your choice: ");
@@ -42,7 +43,13 @@ Main n=new Main();
                         case 1:
                             System.out.println("Accept/reject housing advertisements");
                             admin.manageHousingAdvertisements();
+                        	
                             break;
+                       
+                        case 2:
+                        	 System.out.println("---------------------------");
+                        	admin .viewmanagmenthouse();
+                        	break;
                         case 0:
                             exit = true;
                             System.out.println("Logged out successfully");

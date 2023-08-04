@@ -20,6 +20,7 @@ public class ownermodifiedTest {
 	        while (!exit) {
 	            System.out.println("\nOwner Dashboard");
 	            System.out.println("5. Modify housing data");
+	            System.out.println("6. print Result :");
 	            System.out.println("0. Logout");
 
 	            System.out.print("Enter your choice: ");
@@ -27,13 +28,17 @@ public class ownermodifiedTest {
 	            scanner.nextLine(); // Consume the newline character
 
 	            switch (choice) {
-	                
+	            case 6:
+	            	 System.out.println("-------------------------------------------- ");
+	            	admin.informationho();
+	            	  System.out.println("-------------------------------------------- ");
+	            	  // admin.viewhouse1();
+	                    break;
 	                case 5:
-	                    System.out.println("Modify apartment details");
-	                  
+	                    
+	                	System.out.println("----------------------------------- ");
 	                    admin.modifyHousingData();
-	                    admin.viewHousingDetailsByOwnerName("Alaa");
-	                    admin.viewHousingDetailsByOwnerName("momen");
+	                    admin.viewhouse1();
 	                    break;
 	                
 	                case 0:
